@@ -97,7 +97,8 @@ button:hover {
     color: #ffffff;
 }
 #window {
-    background-color: #B563F8;
+    background-color: #DFBBFC;
+    color: #262529;
     border-radius: 14px;
     padding: 0 14px;
     margin: 4px;
@@ -127,7 +128,7 @@ button:hover {
 }
 
 #battery {
-    background-color: #400570;
+    background-color: #59079C;
     border-radius: 14px;
     padding: 0 14px;
     margin: 4px;
@@ -135,7 +136,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #59079C;
 }
 
 @keyframes blink {
@@ -157,21 +158,23 @@ button:hover {
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
+    border-radius: 14px;
+    padding: 0 14px;
+    margin: 4px;
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
+    background-color: #8B0BF4;
     color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
+    background-color: #8B0BF4;
     color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
+    background-color: #8B0BF4;
     color: #000000;
 }
 
@@ -200,7 +203,7 @@ label:focus {
 }
 
 #network {
-    background-color: #400570;
+    background-color: #B563F8;
     border-radius: 14px;
     padding: 0 14px;
     margin: 4px;
