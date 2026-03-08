@@ -1,0 +1,80 @@
+* {
+    bg: #270344;
+    bg-alt: #400570;
+    accent: #B563F8;
+    fg: #ffffff;
+}
+
+window {
+    width: 600px;
+    border: 2px;
+    border-radius: 16px;
+    border-color: @accent;
+    background-color: @bg;
+}
+
+mainbox {
+    spacing: 6px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+inputbar {
+    padding: 8px;
+    border-radius: 12px;
+    background-color: @bg-alt;
+}
+
+prompt {
+    text-color: @fg;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @fg;
+    background-color: transparent;
+}
+
+listview {
+    lines: 8;
+    spacing: 4px;
+    background-color: transparent;
+}
+
+element {
+    padding: 6px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+element normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element-icon {
+    size: 20px;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: @fg;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #ffffff;
+}
+
+element selected.normal {
+    background-color: @accent;
+}
+
+element selected.active {
+    background-color: @accent;
+}
+
+element selected.urgent {
+    background-color: #eb4d4b;
+}
