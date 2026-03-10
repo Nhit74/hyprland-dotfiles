@@ -19,8 +19,9 @@
 	////////////////////
 
     "modules-center": [
-    "hyprland/window"
-    ],
+ // "hyprland/window",
+    "clock"
+],
     
 
 	///////////////////
@@ -28,12 +29,12 @@
 	///////////////////
 
     "modules-right": [
-     //"pulseaudio",
         "network",
         "power-profiles-daemon",
-        "battery",
-        "clock",
-    ],
+        "pulseaudio",
+        "battery"
+//      "custom/power"
+],
 	///////////////////////////
 	// MODULES CONFIGURATION //
 	///////////////////////////
@@ -62,7 +63,8 @@
     "clock": {
         "timezone": "Europe/Madrid",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%d/%m/%Y | %H:%M}",
+        "format-alt": "{:%d-%m-%Y}"
     },
 
     "battery": {
@@ -106,20 +108,17 @@
     },
 
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "scroll-step": 3, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "{volume}{icon}󰝟 ",
+	"format-muted": "{volume}% 󰝟 ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
             "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
