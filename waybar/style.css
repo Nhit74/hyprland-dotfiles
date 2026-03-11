@@ -159,7 +159,13 @@ button:hover {
 
 #pulseaudio {
     background-color: #59079C;
-    border-radius: 14px;
+    border-radius: 14px 0 0 14px;
     padding: 0 14px;
-    margin: 4px;
+    margin:  4px -2px 4px 0px;
+}
+#backlight {
+    background-color: #59079C;
+    border-radius: 0 14px 14px 0;
+    padding: 0 14px;
+    margin:  4px 0px 4px -3px;
 }

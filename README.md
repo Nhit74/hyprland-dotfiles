@@ -22,7 +22,7 @@ This is my main hyprland config based on purple-themed interface.
     SUPER + L → Lock screen
     SUPER + 1-9 → Switch to workspace 1-9
     SUPER + Shift + 1-9 → Move active window to workspace 1-9
-
+    SUPER + RETURN → Open terminal emulator
 
 ## Credits
 The hyprlock config files are based on the styles and config of [MrVivekRajan](https://github.com/MrVivekRajan/Hyprlock-Styles). 

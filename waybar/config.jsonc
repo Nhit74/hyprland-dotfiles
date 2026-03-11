@@ -32,6 +32,7 @@
         "network",
         "power-profiles-daemon",
         "pulseaudio",
+        "backlight",
         "battery"
 //      "custom/power"
 ],
@@ -108,7 +109,7 @@
     },
 
     "pulseaudio": {
-        "scroll-step": 3, // %, can be a float
+        "scroll-step": 5, 
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": "{volume}{icon}󰝟 ",
@@ -124,6 +125,12 @@
         "on-click": "pavucontrol"
     },
 
+"backlight": {
+	"scroll-step": 3,
+        "device": "intel_backlight",
+	"format": "{percent}% {icon}" ,
+	"format-icons": ["", ""]
+},
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
