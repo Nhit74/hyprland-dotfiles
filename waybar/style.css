@@ -84,7 +84,7 @@ button:hover {
     margin: 4px;
 }
 #workspaces {
-    background-color: #270344;
+    background-color: #59079C;
     border-radius: 14px;
     padding: 0 14px;
     margin: 4px;
@@ -168,4 +168,18 @@ button:hover {
     border-radius: 0 14px 14px 0;
     padding: 0 14px;
     margin:  4px 0px 4px -3px;
+}
+#custom-home {
+    background-color: #270344;
+    background-image: url('/home/nhit_74/.config/waybar/arch-linux.png');
+    background-size: 22px 22px; 
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    padding: 0 14px;
+    margin: 4px;
+    background-position: center;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0 10px;
+    font-size: 0;
 }

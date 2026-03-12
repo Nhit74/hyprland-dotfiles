@@ -10,6 +10,8 @@
 	//////////////////
 
     "modules-left": [
+        "custom/home",
+//        "custom/power",
         "hyprland/workspaces"
 ],
 
@@ -20,7 +22,7 @@
 
     "modules-center": [
  // "hyprland/window",
-    "clock"
+     "clock"
 ],
     
 
@@ -34,7 +36,6 @@
         "pulseaudio",
         "backlight",
         "battery"
-//      "custom/power"
 ],
 	///////////////////////////
 	// MODULES CONFIGURATION //
@@ -131,16 +132,22 @@
 	"format": "{percent}% {icon}" ,
 	"format-icons": ["", ""]
 },
-    "custom/power": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
-    }
+
+"custom/home": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "~/.config/eww/scripts/toggle_home.sh"
+},
+"custom/power": {
+    "format": " ",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources
+    "menu-actions": {
+        "shutdown": "shutdown",
+        "reboot": "reboot",
+        "suspend": "systemctl suspend",
+        "hibernate": "systemctl hibernate"
+     }
+  }
 }

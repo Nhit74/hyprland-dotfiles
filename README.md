@@ -13,6 +13,7 @@ This is my main hyprland config based on purple-themed interface.
  - Waybar
  - Kitty
  - Rofi
+ - eww (arch user repository)
 
 ## KeyBindings
     

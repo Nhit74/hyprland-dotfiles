@@ -1,0 +1,75 @@
+(defwindow home
+  :monitor 0
+  :geometry (geometry :x "5px" :y "0px" :width "260px" :height "240px")
+  :stacking "fg"
+  :windowtype "dock"
+  (home_menu)
+)
+(defwidget home_menu []
+  (box :orientation "v" :class "menu"
+
+    (box :orientation "v"
+      (label :text "Volume")
+      (scale
+        :min 0
+        :max 100
+        :value {volume}
+        :onchange "~/.config/eww/scripts/set_volume {}"
+      )
+    )
+
+    (box :orientation "v"
+      (label :text "Brightness")
+      (scale
+        :min 0
+        :max 100
+        :value {brightness}
+        :onchange "~/.config/eww/scripts/set_brightness {}"
+      )
+    )
+
+ ;; TOGGLES
+    (box :orientation "h" :space-evenly true
+      (button
+        :class "toggle"
+        :onclick "kitty nmtui &"
+        (label :text "")
+      )
+
+      (button
+        :class "toggle"
+        :onclick "~/.config/eww/scripts/toggle_bt"
+        (label :text "")
+      )
+    )
+    (box :orientation "h" :space-evenly true
+
+      (button
+        :class "power"
+        :onclick "systemctl poweroff"
+        (label :text "")
+      )
+
+      (button
+        :class "power"
+        :onclick "systemctl reboot"
+        (label :text "")
+      )
+
+      (button
+        :class "power"
+        :onclick "hyprctl dispatch exit"
+        (label :text "󰍃")
+      )
+    )
+  )
+)
+
+
+(defpoll volume :interval "2s"
+  "~/.config/eww/scripts/get_volume"
+)
+
+(defpoll brightness :interval "2s"
+  "~/.config/eww/scripts/get_brightness"
+)

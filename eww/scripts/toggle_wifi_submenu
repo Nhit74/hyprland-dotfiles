@@ -1,0 +1,6 @@
+#!/bin/bash
+if eww get wifi_menu_open | grep -q true; then
+    eww update wifi_menu_open=false
+else
+    eww update wifi_menu_open=true
+fi
