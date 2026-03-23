@@ -38,7 +38,7 @@
 
       (button
         :class "toggle"
-        :onclick "~/.config/eww/scripts/toggle_bt"
+        :onclick "kitty bluetui &"
         (label :text "")
       )
     )
