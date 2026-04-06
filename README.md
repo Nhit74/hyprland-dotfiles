@@ -1,19 +1,21 @@
-This is my main hyprland config based on purple-themed interface.  
+This is my main hyprland config based on purple-themed interface for arch linux.  
 
 ## Preview
 ![Hyprland window preview](previews/prev.png)
 
 ![Hyprland desktop preview](previews/prevWallpaper.png)
 
+![Eww and rofi menus preview](previews/prevMenus.png)
 
 ## Software used
 
  - Hyprland
  - Hyprlock
+ - Hyprpaper
  - Waybar
  - Kitty
  - Rofi
- - eww (arch user repository)
+ - eww (AUR)
 
 ## KeyBindings
     
