@@ -16,6 +16,7 @@ This is my main hyprland config based on purple-themed interface for arch linux.
  - Kitty
  - Rofi
  - eww (AUR)
+ - mpd + mpc + rmpc
 
 ## KeyBindings
     

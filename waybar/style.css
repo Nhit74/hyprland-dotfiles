@@ -131,11 +131,6 @@ button:hover {
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
     color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #power-profiles-daemon {
@@ -182,4 +177,11 @@ button:hover {
     min-height: 24px;
     padding: 0 10px;
     font-size: 0;
+}
+#mpd {
+    background-color: #8B0BF4;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 0 14px;
+    margin: 4px;
 }
